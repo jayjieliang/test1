@@ -1,52 +1,56 @@
-# Prerequisites
-*.d
+# React Native
+node_modules/
+.expo/
+.expo-shared/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+.DS_Store
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Metro
+.metro-health-check*
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Buck
+buck-out/
+\.buckd/
+*.keystore
+!debug.keystore
 
-# Precompiled Headers
-*.gch
-*.pch
+# Android
+android/app/build/
+android/.gradle/
+android/local.properties
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# iOS
+ios/Pods/
+ios/build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Temporary files
+tmp/
+temp/
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# Logs
+*.log
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# CodeQL
+_codeql_detected_source_root
