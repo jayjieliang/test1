@@ -2,23 +2,9 @@
  * Calculator Logic Tests
  */
 
-describe('Calculator', () => {
-  // Mock calculator functions
-  const calculate = (prev, current, op) => {
-    switch (op) {
-      case '+':
-        return prev + current;
-      case '-':
-        return prev - current;
-      case '×':
-        return prev * current;
-      case '÷':
-        return current !== 0 ? prev / current : 0;
-      default:
-        return current;
-    }
-  };
+import { calculate } from '../App';
 
+describe('Calculator', () => {
   describe('Addition', () => {
     it('should add two positive numbers', () => {
       expect(calculate(5, 3, '+')).toBe(8);

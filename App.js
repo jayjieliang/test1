@@ -38,21 +38,6 @@ const App = () => {
     setShouldResetDisplay(true);
   };
 
-  const calculate = (prev, current, op) => {
-    switch (op) {
-      case '+':
-        return prev + current;
-      case '-':
-        return prev - current;
-      case '×':
-        return prev * current;
-      case '÷':
-        return current !== 0 ? prev / current : 0;
-      default:
-        return current;
-    }
-  };
-
   const handleEquals = () => {
     if (operation && previousValue !== null) {
       const currentValue = parseFloat(display);
@@ -186,5 +171,21 @@ const styles = StyleSheet.create({
     backgroundColor: '#ff9500',
   },
 });
+
+// Export calculate function for testing
+export const calculate = (prev, current, op) => {
+  switch (op) {
+    case '+':
+      return prev + current;
+    case '-':
+      return prev - current;
+    case '×':
+      return prev * current;
+    case '÷':
+      return current !== 0 ? prev / current : 0;
+    default:
+      return current;
+  }
+};
 
 export default App;
